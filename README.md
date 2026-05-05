@@ -6,13 +6,13 @@ A two-part end-to-end data analysis project on the **Quantium Virtual Internship
 
 ## 📁 Project Structure
 
-```
-├── potato-chips-analysis.ipynb   # Part 1 — Customer & Product Analysis
-├── Trail_Stores.ipynb            # Part 2 — Trial Store Experimentation
-└── README.md
-```
 
----
+├── potato-chips-analysis.ipynb   # Part 1 Customer & Product Analysis
+├── Trail_Stores.ipynb            # Part 2 Trial Store Experimentation
+└── README.md
+
+
+
 
 # Part 1 — Potato Chips Analysis (`potato-chips-analysis.ipynb`)
 
@@ -26,11 +26,11 @@ Exploratory data analysis on chip sales across all stores, identifying the highe
 | `QVI_purchase_behaviour.csv` | Kaggle | Customer loyalty card segmentation by lifestage & tier |
 
 ### Key Steps
-- **Data Loading & Cleaning** — Fixed Excel serial date format, merged transaction and behaviour datasets
-- **Pack Size Analysis** — Segmented products into small (≤110g), medium (170–175g), and large (330g+) to compare revenue share
-- **Brand Analysis** — Identified top-selling brands by volume and revenue
-- **Customer Segmentation** — Used DuckDB SQL queries + a heatmap to find which lifestage & premium tier buys the most chips
-- **Store Performance** — Ranked stores by chips revenue, transactions, and packets sold
+- **Data Loading & Cleaning**  Fixed Excel serial date format, merged transaction and behaviour datasets
+- **Pack Size Analysis**  Segmented products into small (≤110g), medium (170–175g), and large (330g+) to compare revenue share
+- **Brand Analysis**  Identified top-selling brands by volume and revenue
+- **Customer Segmentation**  Used DuckDB SQL queries + a heatmap to find which lifestage & premium tier buys the most chips
+- **Store Performance**  Ranked stores by chips revenue, transactions, and packets sold
 
 # Key Findings
 1. **Medium pack sizes (170–175g) account for over 67% of total chips revenue**, with large packs (330g+) contributing only 7.1% despite their higher unit price.
@@ -56,19 +56,19 @@ Evaluated the effectiveness of an in-store intervention (trial) run across three
 # Methodology
 
 **Step 1 — Data Cleaning**
-- Removed null values and duplicate records
-- Filtered out bulk/non-retail purchases (qty ≥ 100)
-- Removed sales outliers using IQR (1.5× rule)
-- Final clean dataset: **264,258 rows**
+ Removed null values and duplicate records
+ Filtered out bulk/non-retail purchases (qty ≥ 100)
+ Removed sales outliers using IQR (1.5× rule)
+ Final clean dataset: **264,258 rows**
 
-**Step 2 — Pre-Trial Baseline (Jul 2018 – Jan 2019)**
+**Step 2  Pre-Trial Baseline (Jul 2018 – Jan 2019)**
 | Trial Store | Pre-Trial Sales |
 |-------------|----------------|
 | Store 77    | $1,693.60       |
 | Store 86    | $6,091.45       |
 | Store 88    | $9,293.60       |
 
-**Step 3 — Control Store Matching**
+**Step 3 Control Store Matching**
 Each trial store was paired with its closest control store by minimising the absolute difference in pre-trial sales.
 
 | Trial Store | Control Store | Sales Difference |
@@ -89,7 +89,7 @@ A scaling factor was computed (trial ÷ control pre-trial sales) to normalise th
 | 88          | $3,832.94                 | $4,286.80          | **+11.84%** |
 
 #Key Finding
-1 **All three trial stores outperformed their matched control stores**, with Store 88 showing the strongest uplift at nearly 12% — suggesting the trial intervention had a consistently positive effect on sales.
+1 **All three trial stores outperformed their matched control stores**, with Store 88 showing the strongest uplift at nearly 12%  suggesting the trial intervention had a consistently positive effect on sales.
 
 # Libraries Used
 
