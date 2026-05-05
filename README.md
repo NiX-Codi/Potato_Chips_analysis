@@ -2,7 +2,7 @@
 
 A two-part end-to-end data analysis project on the **Quantium Virtual Internship (QVI)** dataset, covering customer purchasing behaviour for chips and a controlled trial store performance evaluation.
 
----
+
 
 ## 📁 Project Structure
 
@@ -14,7 +14,7 @@ A two-part end-to-end data analysis project on the **Quantium Virtual Internship
 
 
 
-# Part 1 — Potato Chips Analysis (`potato-chips-analysis.ipynb`)
+# Part 1  Potato Chips Analysis (`potato-chips-analysis.ipynb`)
 
 # Overview
 Exploratory data analysis on chip sales across all stores, identifying the highest-revenue pack sizes, top-performing brands, key customer demographics, and best-performing store locations.
