@@ -26,11 +26,11 @@ Exploratory data analysis on chip sales across all stores, identifying the highe
 | `QVI_purchase_behaviour.csv` | Kaggle | Customer loyalty card segmentation by lifestage & tier |
 
 ### Key Steps
-- **Data Loading & Cleaning**  Fixed Excel serial date format, merged transaction and behaviour datasets
-- **Pack Size Analysis**  Segmented products into small (≤110g), medium (170–175g), and large (330g+) to compare revenue share
-- **Brand Analysis**  Identified top-selling brands by volume and revenue
-- **Customer Segmentation**  Used DuckDB SQL queries + a heatmap to find which lifestage & premium tier buys the most chips
-- **Store Performance**  Ranked stores by chips revenue, transactions, and packets sold
+ **Data Loading & Cleaning**  Fixed Excel serial date format, merged transaction and behaviour datasets
+ **Pack Size Analysis**  Segmented products into small (≤110g), medium (170–175g), and large (330g+) to compare revenue share
+ **Brand Analysis**  Identified top-selling brands by volume and revenue
+ **Customer Segmentation**  Used DuckDB SQL queries + a heatmap to find which lifestage & premium tier buys the most chips
+ **Store Performance**  Ranked stores by chips revenue, transactions, and packets sold
 
 # Key Findings
 1. **Medium pack sizes (170–175g) account for over 67% of total chips revenue**, with large packs (330g+) contributing only 7.1% despite their higher unit price.
@@ -43,7 +43,7 @@ Exploratory data analysis on chip sales across all stores, identifying the highe
 
 pandas | numpy | matplotlib | seaborn | duckdb | matplotlib-venn | re
 
-# Part 2 — Trial Store Analysis (`Trail_Stores.ipynb`)
+# Part 2  Trial Store Analysis (`Trail_Stores.ipynb`)
 
 # Overview
 Evaluated the effectiveness of an in-store intervention (trial) run across three pilot stores by comparing their sales performance against carefully selected control stores during the trial period (Feb–Apr 2019).
